@@ -79,3 +79,6 @@ model.save('model/crack_model.h5')
 print('Model saved to model/crack_model.h5')
 print('Training complete!')
 
+loss, accuracy = model.evaluate(val_data)
+print(f'Validation Loss:{loss:.4f}')
+print(f'Validation Accuracy:{accuracy*100:;2f}%')
