@@ -1,8 +1,10 @@
 fastapi
 uvicorn
 tensorflow==2.15.0
+keras==2.13.1
 pillow
-numpy
+numpy==1.26.4
 opencv-python-headless
 python-multipart
 gdown
+h5py==3.9.0
