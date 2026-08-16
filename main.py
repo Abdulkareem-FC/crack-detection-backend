@@ -29,7 +29,8 @@ if not os.path.exists(MODEL_PATH):
     print('Model downloaded!')
 
 print('Loading AI model...')
-model = tf.keras.models.load_model(MODEL_PATH)
+import tf_keras
+model = tf_keras.models.load_model(MODEL_PATH)
 print('Model loaded successfully!')
 
 CRACK_INFO = {
