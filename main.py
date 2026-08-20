@@ -18,8 +18,8 @@ app.add_middleware(
 )
 
 CRACK_CLASS_INDEX = 0
-MODEL_PATH = 'model/crack_model.h5'
-GDRIVE_FILE_ID = '1-brcUIgBd5mfWxXlSZhAl1794kF2nGSd'
+MODEL_PATH = 'model/crack_model.keras'
+GDRIVE_FILE_ID = '1mCwGYd5a5j1NiTViMocndboOW_0N_tu1'
 
 if not os.path.exists(MODEL_PATH):
     print('Downloading model from Google Drive...')
@@ -30,7 +30,8 @@ if not os.path.exists(MODEL_PATH):
 
 print('Loading AI model...')
 import tf_keras
-model = tf_keras.models.load_model(MODEL_PATH)
+# model = tf_keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH)
 print('Model loaded successfully!')
 
 CRACK_INFO = {
